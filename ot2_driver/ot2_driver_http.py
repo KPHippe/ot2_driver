@@ -97,16 +97,10 @@ class OT2_Driver:
         if ".py" not in str(config_path):
             self.protopiler.load_config(config_path=config_path, resource_file=resource_file)
 
-<<<<<<< Updated upstream
-            (
-                protocol_out_path,
-                protocol_resource_file,
-            ) = self.protopiler.yaml_to_protocol(config_path, resource_file=resource_file)
-=======
+            
             protocol_out_path, protocol_resource_file = self.protopiler.yaml_to_protocol(
                 config_path, resource_file=resource_file
             )
->>>>>>> Stashed changes
 
             return protocol_out_path, protocol_resource_file
         else:
